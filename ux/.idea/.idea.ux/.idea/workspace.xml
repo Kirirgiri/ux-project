@@ -8,6 +8,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/changeInCursor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/combinationFunc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/dropInto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/triggeringInteractiveObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -72,7 +76,9 @@
       <workItem from="1668517355197" duration="726000" />
       <workItem from="1668527218859" duration="1649000" />
       <workItem from="1668532228902" duration="697000" />
-      <workItem from="1668537903188" duration="3683000" />
+      <workItem from="1668537903188" duration="16869000" />
+      <workItem from="1668591163481" duration="2237000" />
+      <workItem from="1668605964158" duration="1989000" />
     </task>
     <servers />
   </component>

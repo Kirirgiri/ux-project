@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - selectable
+  - ingredient
+  - thrown_ingredient
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - 
   - ground
   - Selectable
-  - 
+  - fire
   - 
   - 
   - 

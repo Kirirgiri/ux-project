@@ -5,13 +5,11 @@ using UnityEngine;
 public class pickUp : MonoBehaviour
 {
     public Transform theDest;
-    [SerializeField] private GameObject player;
     public bool ha = false;
     private int num = 0;
 
-    void FixedUpdate()
+    void Update()
     {
-        var _player = player.GetComponent<selectionManager>();
         if (ha==true)
         {
             GetComponent<BoxCollider>().enabled = false;
@@ -19,17 +17,16 @@ public class pickUp : MonoBehaviour
             //GetComponent<Rigidbody>().isKinematic = false;
             this.transform.position = theDest.position;
             this.transform.parent = GameObject.Find("Destination").transform;
+            this.transform.tag = "ingredient";
         }else if (!ha && this.transform.parent != null){
             this.transform.parent = null;
-            //GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().useGravity = true;
             GetComponent<BoxCollider>().enabled = true;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && num >= 1)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && num > 1)
         {
-            if(this.gameObject.tag == "selectable"){
-                ha = false;
-                num = 0;
-            }
+            ha = false;
+            num = 0;
         }else{
             num++;
         }
