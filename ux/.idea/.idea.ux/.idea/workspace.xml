@@ -13,6 +13,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/scripts/dropInto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/extinguishFire.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scripts/triggeringInteractiveObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/unlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.7/Runtime/Passes/AdditionalLightsShadowCasterPass.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -80,7 +81,7 @@
       <workItem from="1668537903188" duration="16869000" />
       <workItem from="1668591163481" duration="2237000" />
       <workItem from="1668605964158" duration="2732000" />
-      <workItem from="1668620650576" duration="6452000" />
+      <workItem from="1668620650576" duration="11681000" />
     </task>
     <servers />
   </component>

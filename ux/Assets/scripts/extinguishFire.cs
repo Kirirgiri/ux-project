@@ -18,7 +18,7 @@ public class extinguishFire : MonoBehaviour
                 GameObject.Find("Key_Rusty").tag = "selectable";
                 Destroy(cupFire);
                 Destroy(curseFire);
-                Destroy(this);
+                Destroy(gameObject);
             }
         }
     }
