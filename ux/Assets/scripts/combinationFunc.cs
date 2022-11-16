@@ -9,26 +9,54 @@ public class combinationFunc : MonoBehaviour
     [SerializeField] private GameObject[] ingredients;
 
     [SerializeField] private GameObject[] fires;
+    [SerializeField] private GameObject _parent;
+    private bool _cauldrionCheck = true;
+    private bool _tookfire = false;
 
 
     private void OnTriggerEnter(Collider other)
     {
         other.gameObject.tag = "thrown_ingredient";
-        var _thrownIngredients = 0;
-        foreach (GameObject i in ingredients)
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (_cauldrionCheck)
         {
-            if (i.gameObject.tag == "thrown_ingredient")
+            var _thrownIngredients = 0;
+            foreach (GameObject i in ingredients)
             {
-                _thrownIngredients++;
-                Debug.Log(i.name);
+                if (i.gameObject.tag == "thrown_ingredient")
+                {
+                    _thrownIngredients++;
+                }
+            }
+
+            if (_thrownIngredients == ingredients.Length)
+            {
+                fires[0].SetActive(false);
+                fires[1].SetActive(true);
+                foreach (GameObject i in ingredients)
+                {
+                    Destroy(i);
+                }
+
+                _cauldrionCheck = false;
             }
         }
 
-        if (_thrownIngredients == ingredients.Length)
+    }
+
+    private void OnMouseDown()
+    {
+        if (!_tookfire)
         {
-            fires[0].SetActive(false);
-            fires[1].SetActive(true);
+            if (_parent.transform.GetChild(0).gameObject.name == "Cup_01" && fires[1].activeSelf)
+            {
+                fires[2].SetActive(true);
+                fires[1].SetActive(false);
+                _tookfire = true;
+            }
         }
     }
-    
 }

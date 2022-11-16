@@ -17,7 +17,10 @@ public class pickUp : MonoBehaviour
             //GetComponent<Rigidbody>().isKinematic = false;
             this.transform.position = theDest.position;
             this.transform.parent = GameObject.Find("Destination").transform;
-            this.transform.tag = "ingredient";
+            if (this.name != "Cup_01" && this.name != "Key_Rusty")
+            {
+                this.transform.tag = "ingredient";
+            }
         }else if (!ha && this.transform.parent != null){
             this.transform.parent = null;
             GetComponent<Rigidbody>().useGravity = true;
