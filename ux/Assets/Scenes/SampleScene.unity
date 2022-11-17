@@ -2950,7 +2950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -7217,7 +7217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: {fileID: 1065807497}
   door: {fileID: 392906040}
-  doorOpen: doorOpening
 --- !u!54 &1091267263
 Rigidbody:
   m_ObjectHideFlags: 0

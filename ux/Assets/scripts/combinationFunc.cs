@@ -17,6 +17,7 @@ public class combinationFunc : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.gameObject.tag = "thrown_ingredient";
+        other.gameObject.GetComponent<Outline>().enabled = false;
     }
 
     private void OnTriggerStay(Collider other)
@@ -51,11 +52,14 @@ public class combinationFunc : MonoBehaviour
     {
         if (!_tookfire)
         {
-            if (_parent.transform.GetChild(0).gameObject.name == "Cup_01" && fires[1].activeSelf)
+            if (_parent.transform.GetChild(0))
             {
-                fires[2].SetActive(true);
-                fires[1].SetActive(false);
-                _tookfire = true;
+                if (_parent.transform.GetChild(0).gameObject.name == "Cup_01" && fires[1].activeSelf)
+                {
+                    fires[2].SetActive(true);
+                    fires[1].SetActive(false);
+                    _tookfire = true;
+                }
             }
         }
     }

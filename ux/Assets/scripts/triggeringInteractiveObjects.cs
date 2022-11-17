@@ -11,7 +11,8 @@ public class triggeringInteractiveObjects : MonoBehaviour
         if (other.gameObject.tag == "selectable")
         {
             other.GetComponent<Outline>().enabled = true;
-            other.GetComponent<Outline>().OutlineWidth = 10f;
+            other.GetComponent<Outline>().OutlineWidth = 2f;
+            other.GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineVisible;
         }
     }
 
